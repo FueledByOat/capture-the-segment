@@ -78,7 +78,7 @@ for seggie in segments:
                     break
             time_val = time_cell.get_text(strip=True)
             date_val = date_cell.get_text(strip=True)
-            if "Charlie Smith 🪖" in name_raw or "Dre Haus 🪖" in name_raw or "Henry Benson 🪖" in name_raw or "Yü Wu 🪖 " in name_raw or "David Nuetzman 🪖 " in name_raw:
+            if "name" in name_raw:
                 continue
 
             raw_name_time_pairs.append({"Segment": seggie, "Name": name_raw, "Date" : date_val, "Time": time_val})
